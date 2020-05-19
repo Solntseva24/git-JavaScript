@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+        'use strict';
+        /* 6**. (Сложное задание, требует времени и возможно гугления, делайте по желанию.)
+        Программа должна спросить у пользователя число, это будет количество денег, которое он хочет
+        положить на счет в банке. Затем программа должна выдать примерно такое сообщение:
+        "Ваша сумма в 101 рубль успешно зачислена." - в случае если пользователь ввел 101
+        "Ваша сумма в 10020 рублей успешно зачислена." - в случае если пользователь ввел 10020
+        "Ваша сумма в 120104 рубля успешно зачислена." - в случае если пользователь ввел 120104
+        То есть ваша задача выводить слово «рубль» в правильном падеже, в зависимости от введенного
+        числа. */
+       let userNumber = +prompt("Введите сумму, которую хотите положить на счет");
+        userNumber = Math.trunc(userNumber);
+        let latestFigures = userNumber % 100;
+        if (latestFigures == 11 || latestFigures == 12 || latestFigures == 13 || latestFigures == 14) {
+            alert(`Ваша сумма в ${userNumber} рублей успешно зачислена`);
+        } else {
+            latestFigures = userNumber % 10;
+            latestFigures = String(latestFigures);
+            switch (latestFigures) {
+                case "1":
+                    alert(`Ваша сумма в ${userNumber} рубль успешно зачислена`);
+                    break;
+                case "2":
+                case "3":
+                case "4":
+                    alert(`Ваша сумма в ${userNumber} рубля успешно зачислена`);
+                    break;
+                case "5":
+                case "6":
+                case "7":
+                case "8":
+                case "9":
+                case "0":
+                    alert(`Ваша сумма в ${userNumber} рублей успешно зачислена`);
+                    break;
+                default:
+                    alert("Вы ошиблись при вводе числа, возможно нужно ввести число через точку")
+
+            }
+        }
+    </script>
+
+</body>
+</html>
