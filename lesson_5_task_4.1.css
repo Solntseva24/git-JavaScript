@@ -1,0 +1,32 @@
+body {
+    background: #f8f8f8;
+}
+
+.footer {
+    width: 1890px;
+    height: 700px;
+    border: 1px solid #000;
+    background-color: azure;
+}
+
+.heading_2 {
+    text-align: center;
+    color: olive;
+    font-weight: bold;
+    font-family: serif;
+}
+
+.product {
+    text-align: center;
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 370px;
+}
+img {
+    display: block;
+}
+
+.description {
+    text-align: center;
+    background-color: #cccccc;
+}
